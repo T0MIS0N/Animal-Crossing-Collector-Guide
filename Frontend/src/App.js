@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home'
 import Critters from './components/Critters'
@@ -9,21 +8,21 @@ function App() {
     <div>
       <nav>
         <ul id="navigation">
-          <li>
+          <li className='left edge-left'>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className='left'>
             <Link to="/critters">Critters</Link>
           </li>
-          <li>
+          <li className='right edge-right'>
             <a target='blank' href='https://github.com/T0MIS0N/animal-crossing-collector-guide'>Github</a>
           </li>
         </ul>
       </nav>
 
       <Routes>
-        <Route exact path="" element={<Home />} />
-        <Route exact path="critters" element={<Critters />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/critters" element={<Critters />} />
       </Routes>
     </div>
   );

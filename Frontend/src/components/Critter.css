@@ -1,0 +1,28 @@
+.critter-page{
+    background-color: white;
+    margin: 0 10%;
+    padding-top: 3%;
+    min-height: 96vh;
+}
+
+.critter-bar{
+  background-color: rgb(46, 46, 46);
+  color: white;
+  overflow: hidden;
+  display: block;
+  list-style-type: none;
+  margin: 20px;
+  padding: 0 20px;
+}
+
+.critter-info{
+    background-color: lightgray;
+    margin: 20px;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.critter-grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}

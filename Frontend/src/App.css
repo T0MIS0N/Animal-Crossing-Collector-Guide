@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+#navigation{
+  background-color: lightgray;
+  overflow: hidden;
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#navigation li a{
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  color: #282c34;
+}
+
+#navigation li:hover{
+  background-color: white;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.edge-left{
+  margin-left: 30px;
+}
+
+.edge-right{
+  margin-right: 30px;
+}
+
+body{
+  background-color: rgb(172, 172, 172);
+  height: 100%;
+}

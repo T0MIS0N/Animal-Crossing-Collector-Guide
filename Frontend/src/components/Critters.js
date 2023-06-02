@@ -1,27 +1,28 @@
-import '../App.css';
+import './Critter.css';
 import React from 'react';
-import logo from '../logo.svg';
+import CritterCard from './CritterCard';
 
 class Critters extends React.Component {
     render() {
         return (
-            <div className="App">
-                <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Critter Grid!!!
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-                </header>
+            <div className="critter-page">
+                <div className='critter-bar'>
+                    <p>Critter Bar</p>
+                </div>
+                <div className='critter-info'>
+                    <p>Here are the critters available at [Insert Date and Time]!</p>
+                </div>
+                <div className='critter-grid'>
+                    {<CritterCard/>}
+                    {<CritterCard/>}
+                    {<CritterCard/>}
+                    {<CritterCard/>}
+                    {<CritterCard/>}
+                    {<CritterCard/>}
+                    {<CritterCard/>}
+                    {<CritterCard/>}
+                </div>
             </div>
-            
         );
     }
 
