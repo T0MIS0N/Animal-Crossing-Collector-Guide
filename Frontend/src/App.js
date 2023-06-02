@@ -1,25 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home'
+import Critters from './components/Critters'
+import { Route, Routes, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <nav>
+        <ul id="navigation">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/critters">Critters</Link>
+          </li>
+          <li>
+            <a target='blank' href='https://github.com/T0MIS0N/animal-crossing-collector-guide'>Github</a>
+          </li>
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route exact path="" element={<Home />} />
+        <Route exact path="critters" element={<Critters />} />
+      </Routes>
     </div>
   );
+
 }
 
 export default App;
