@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/animal-crossing-collector-guide/static/css/main.073c9b0a.css",
+    "main.js": "/animal-crossing-collector-guide/static/js/main.83903e5b.js",
+    "static/js/787.7fb78a51.chunk.js": "/animal-crossing-collector-guide/static/js/787.7fb78a51.chunk.js",
+    "static/media/logo.svg": "/animal-crossing-collector-guide/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/animal-crossing-collector-guide/index.html",
+    "main.073c9b0a.css.map": "/animal-crossing-collector-guide/static/css/main.073c9b0a.css.map",
+    "main.83903e5b.js.map": "/animal-crossing-collector-guide/static/js/main.83903e5b.js.map",
+    "787.7fb78a51.chunk.js.map": "/animal-crossing-collector-guide/static/js/787.7fb78a51.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.83903e5b.js"
+  ]
+}
