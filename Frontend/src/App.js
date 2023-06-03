@@ -21,8 +21,8 @@ function App() {
       </nav>
 
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/critters" element={<Critters />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/critters" element={<Critters />} />
       </Routes>
     </div>
   );

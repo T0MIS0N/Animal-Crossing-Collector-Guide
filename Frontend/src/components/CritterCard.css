@@ -1,8 +1,8 @@
 .critter-card{
     background-color: rgb(46, 46, 46);
     min-height: 50vh;
-    margin: 20px;
-    padding: 10px 20px;
+    margin: 10px;
+    padding: 0;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
@@ -10,4 +10,28 @@
 
 .critter-card:hover{
     box-shadow: 0 16px 32px 0 rgba(0,0,0,0.4);
+}
+
+img{
+    display: block;
+    background-color: white;
+    width: 100%;
+}
+
+td, th{
+    background-color: rgb(56, 56, 56);
+    width: 50%;
+    height: 100%;
+}
+
+tr{
+    height: 100%;
+}
+
+.left-pad{
+    margin-left: 5px;
+}
+
+.right-pad{
+    margin-right: 5px;
 }

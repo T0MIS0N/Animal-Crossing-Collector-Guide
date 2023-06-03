@@ -3,7 +3,7 @@ import React from 'react';
 import './Home.css';
 import '../'
 
-const images_folder = './animal-crossing-collector-guide/Images/UI/'
+const images_folder = './Images/UI/'
 
 class Home extends React.Component {
     render() {
