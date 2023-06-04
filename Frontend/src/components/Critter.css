@@ -13,6 +13,7 @@
   list-style-type: none;
   margin: 20px;
   padding: 0 20px;
+  height: 10vh;
 }
 
 .critter-info{
@@ -25,4 +26,13 @@
 .critter-grid{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+}
+
+.critter-type{
+    width: auto;
+    margin: 0 10px;
+}
+
+.critter-type:hover{
+    background-color: black;
 }
