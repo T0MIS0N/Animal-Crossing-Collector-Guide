@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/animal-crossing-collector-guide/static/css/main.53ad07db.css",
-    "main.js": "/animal-crossing-collector-guide/static/js/main.b9e505fc.js",
+    "main.css": "/animal-crossing-collector-guide/static/css/main.0e0a6032.css",
+    "main.js": "/animal-crossing-collector-guide/static/js/main.0ecbc0dc.js",
     "static/js/787.7fb78a51.chunk.js": "/animal-crossing-collector-guide/static/js/787.7fb78a51.chunk.js",
     "index.html": "/animal-crossing-collector-guide/index.html",
-    "main.53ad07db.css.map": "/animal-crossing-collector-guide/static/css/main.53ad07db.css.map",
-    "main.b9e505fc.js.map": "/animal-crossing-collector-guide/static/js/main.b9e505fc.js.map",
+    "main.0e0a6032.css.map": "/animal-crossing-collector-guide/static/css/main.0e0a6032.css.map",
+    "main.0ecbc0dc.js.map": "/animal-crossing-collector-guide/static/js/main.0ecbc0dc.js.map",
     "787.7fb78a51.chunk.js.map": "/animal-crossing-collector-guide/static/js/787.7fb78a51.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53ad07db.css",
-    "static/js/main.b9e505fc.js"
+    "static/css/main.0e0a6032.css",
+    "static/js/main.0ecbc0dc.js"
   ]
 }
