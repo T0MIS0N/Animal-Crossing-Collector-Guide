@@ -1,10 +1,10 @@
 import './CritterCard.css';
 import React from 'react';
 
-//const image_path = './Images/Insects/'
+//const image_path = './Images/'
 const image_path = './animal-crossing-collector-guide/Images/'
 
-const CritterCard = ({ critter, critter_type }) => {
+const CritterCard = ({ critter, critter_type, donation_array, is_south_island }) => {
     var image_folder = ''
     if (critter_type === 'bug')
         image_folder = 'Insects/'
@@ -21,13 +21,10 @@ const CritterCard = ({ critter, critter_type }) => {
                     <tr><td colSpan={2} className='right-pad left-pad'><h4>{critter.Description}</h4></td></tr>
                     <tr><td colSpan={2}><div className='img-div'><img className='critter-img' src={imageName} alt={critter.Name} /></div></td></tr>
                     <tr>
-                        <td className='left-pad'>Date</td>
-                        <td className='right-pad'>{new Date().toUTCString()}</td>
+                        <td className='left-pad'>Time Left</td>
+                        <td className='right-pad'>Comming Soon</td>
                     </tr>
-                    <tr>
-                        <td className='left-pad'>Active Months</td>
-                        <td className='right-pad'>{critter.NorthMonths}</td>
-                    </tr>
+                    {getMonthsRow(critter, is_south_island)}
                     <tr>
                         <td className='left-pad'>Active Times</td>
                         <td className='right-pad'>{critter.Time}</td>
@@ -44,11 +41,48 @@ const CritterCard = ({ critter, critter_type }) => {
                         <td className='left-pad'>Sell Price</td>
                         <td className='right-pad'>{critter.Price}</td>
                     </tr>
-                    <tr><td colSpan={2}><input type='checkbox' title='Donated'></input></td></tr>
+                    <tr><td colSpan={2}><input id={critter.Name + 'Checkbox'} type='checkbox' onClick={() => onDonationClick(critter, donation_array)} title='Donated'></input></td></tr>
+                    {setCheckBox(critter, donation_array)}
                 </tbody>
             </table>
         </div>
     )
+}
+
+function setCheckBox(critter, donation_array) {
+    var checkbox = document.getElementById(critter.Name + 'Checkbox')
+    if (checkbox != null && donation_array.includes(critter.Name))
+        checkbox.checked = true
+}
+
+function onDonationClick(critter, donation_array) {
+    console.log(donation_array)
+    if (!donation_array.includes(critter.Name)) {
+        donation_array.push(critter.Name)
+    } else {
+        for (var i = 0; i < donation_array.length; i++) {
+            if (donation_array[i] === critter.Name)
+                return donation_array.splice(i, 1)
+        }
+    }
+}
+
+function getMonthsRow(critter, is_south_island) {
+    if (is_south_island) {
+        return (
+            <tr>
+                <td className='left-pad'>Active Months</td>
+                <td className='right-pad'>{critter.SouthMonths}</td>
+            </tr>
+        )
+    } else {
+        return (
+            <tr>
+                <td className='left-pad'>Active Months</td>
+                <td className='right-pad'>{critter.NorthMonths}</td>
+            </tr>
+        )
+    }
 }
 
 function getLocationRow(critter, critter_type) {

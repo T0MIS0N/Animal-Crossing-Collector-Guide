@@ -9,7 +9,7 @@
   background-color: rgb(46, 46, 46);
   color: white;
   overflow: hidden;
-  display: block;
+  display: flex;
   list-style-type: none;
   margin: 20px;
   padding: 0 20px;
@@ -35,4 +35,8 @@
 
 .critter-type:hover{
     background-color: black;
+}
+
+.toggle{
+    margin: auto 15px;
 }
